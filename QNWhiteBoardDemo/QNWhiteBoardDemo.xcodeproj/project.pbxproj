@@ -1,0 +1,985 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F19D5351D15443853C4A9ED /* Pods_QNWhiteBoardDemo_QNWhiteBoardDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F93B412B0C44249C96C106 /* Pods_QNWhiteBoardDemo_QNWhiteBoardDemoUITests.framework */; };
+		776737E7266F29CB006AC9F7 /* QNStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776737E6266F29CB006AC9F7 /* QNStartViewController.m */; };
+		77B11ADD264E1D98007A3892 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11ADC264E1D98007A3892 /* AppDelegate.m */; };
+		77B11AE6264E1D98007A3892 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B11AE4264E1D98007A3892 /* Main.storyboard */; };
+		77B11AE8264E1D9B007A3892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77B11AE7264E1D9B007A3892 /* Assets.xcassets */; };
+		77B11AEB264E1D9B007A3892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B11AE9264E1D9B007A3892 /* LaunchScreen.storyboard */; };
+		77B11AEE264E1D9B007A3892 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11AED264E1D9B007A3892 /* main.m */; };
+		77B11AF8264E1D9B007A3892 /* QNWhiteBoardDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11AF7264E1D9B007A3892 /* QNWhiteBoardDemoTests.m */; };
+		77B11B03264E1D9B007A3892 /* QNWhiteBoardDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11B02264E1D9B007A3892 /* QNWhiteBoardDemoUITests.m */; };
+		77B11B4A264E289C007A3892 /* QNWhiteBoardDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11B48264E289C007A3892 /* QNWhiteBoardDemoController.m */; };
+		77B11F2E26565DE1007A3892 /* QNWhiteBoardSizeSelectionToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F1726565DDD007A3892 /* QNWhiteBoardSizeSelectionToolbar.m */; };
+		77B11F2F26565DE1007A3892 /* QNWhiteBoardButtonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F1926565DDE007A3892 /* QNWhiteBoardButtonGroup.m */; };
+		77B11F3026565DE1007A3892 /* QNWhiteBoardPenToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F1C26565DDE007A3892 /* QNWhiteBoardPenToolbar.m */; };
+		77B11F3126565DE1007A3892 /* QNWhiteBoardColorToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F1E26565DDE007A3892 /* QNWhiteBoardColorToolbar.m */; };
+		77B11F3226565DE1007A3892 /* QNWhiteBoardPrimaryToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F2226565DDF007A3892 /* QNWhiteBoardPrimaryToolbar.m */; };
+		77B11F3326565DE1007A3892 /* QNWhiteBoardLaserToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F2326565DDF007A3892 /* QNWhiteBoardLaserToolbar.m */; };
+		77B11F3426565DE1007A3892 /* QNWhiteBoardBaseToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F2426565DDF007A3892 /* QNWhiteBoardBaseToolbar.m */; };
+		77B11F3526565DE1007A3892 /* QNWhiteBoardEraseToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F2526565DDF007A3892 /* QNWhiteBoardEraseToolbar.m */; };
+		77B11F3626565DE1007A3892 /* QNWhiteBoardGeometryToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F2726565DE0007A3892 /* QNWhiteBoardGeometryToolbar.m */; };
+		77B11F3726565DE1007A3892 /* QNWhiteBoardSubjectToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F2A26565DE0007A3892 /* QNWhiteBoardSubjectToolbar.m */; };
+		77B11F3826565DE1007A3892 /* QNWhiteBoardToolbarColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F2C26565DE1007A3892 /* QNWhiteBoardToolbarColorButton.m */; };
+		77B11F3926565DE1007A3892 /* QNWhiteBoardExpandableToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F2D26565DE1007A3892 /* QNWhiteBoardExpandableToolbar.m */; };
+		77B11F4026565E4D007A3892 /* QNWhiteBoardFloatingMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F3F26565E4D007A3892 /* QNWhiteBoardFloatingMenu.m */; };
+		77B11F5B26565E7B007A3892 /* QNSelectResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F4626565E7A007A3892 /* QNSelectResourceViewController.m */; };
+		77B11F5C26565E7B007A3892 /* thunder_4.0.1.14502.dmg in Resources */ = {isa = PBXBuildFile; fileRef = 77B11F4726565E7A007A3892 /* thunder_4.0.1.14502.dmg */; };
+		77B11F5D26565E7B007A3892 /* QNSelectResourceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B11F4926565E7A007A3892 /* QNSelectResourceViewController.xib */; };
+		77B11F5E26565E7B007A3892 /* QNWhiteBoardPageCellHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F4B26565E7B007A3892 /* QNWhiteBoardPageCellHeader.m */; };
+		77B11F5F26565E7B007A3892 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F4C26565E7B007A3892 /* TableViewCell.m */; };
+		77B11F6026565E7B007A3892 /* QNWhiteBoardPageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F4D26565E7B007A3892 /* QNWhiteBoardPageListView.m */; };
+		77B11F6126565E7B007A3892 /* QNWhiteBoardPageInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B11F4F26565E7B007A3892 /* QNWhiteBoardPageInfoCell.xib */; };
+		77B11F6226565E7B007A3892 /* QNWhiteBoardPageListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B11F5026565E7B007A3892 /* QNWhiteBoardPageListView.xib */; };
+		77B11F6326565E7B007A3892 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B11F5126565E7B007A3892 /* TableViewCell.xib */; };
+		77B11F6426565E7B007A3892 /* QNWhiteBoardPageInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F5526565E7B007A3892 /* QNWhiteBoardPageInfoCell.m */; };
+		77B11F6526565E7B007A3892 /* QNWhiteBoardPageCellHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B11F5626565E7B007A3892 /* QNWhiteBoardPageCellHeader.xib */; };
+		77B11F6626565E7B007A3892 /* QNWhiteBoardPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F5826565E7B007A3892 /* QNWhiteBoardPageControl.m */; };
+		77B11F6726565E7B007A3892 /* QNWhiteBoardPageControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B11F5A26565E7B007A3892 /* QNWhiteBoardPageControl.xib */; };
+		77B11FC526579F7E007A3892 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B11FC326579F6A007A3892 /* SDWebImage.framework */; };
+		77C751DC26A6A53100866349 /* QNWhiteBoardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C751DA26A6A52D00866349 /* QNWhiteBoardSDK.framework */; };
+		77C751DD26A6A53100866349 /* QNWhiteBoardSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77C751DA26A6A52D00866349 /* QNWhiteBoardSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7B930DBA19173BA3B0F467C4 /* Pods_QNWhiteBoardDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38AEE269CFAF59A2433AA95E /* Pods_QNWhiteBoardDemo.framework */; };
+		7EB55FA579ABD7C41B454F2F /* Pods_QNWhiteBoardDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D287C693793CAAF49E9FAF /* Pods_QNWhiteBoardDemoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77B11AF4264E1D9B007A3892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77B11AD0264E1D98007A3892 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77B11AD7264E1D98007A3892;
+			remoteInfo = QNWhiteBoardDemo;
+		};
+		77B11AFF264E1D9B007A3892 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77B11AD0264E1D98007A3892 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77B11AD7264E1D98007A3892;
+			remoteInfo = QNWhiteBoardDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77C751DE26A6A53100866349 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				77C751DD26A6A53100866349 /* QNWhiteBoardSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		14F93B412B0C44249C96C106 /* Pods_QNWhiteBoardDemo_QNWhiteBoardDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QNWhiteBoardDemo_QNWhiteBoardDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF88AE052C8567F65B71497 /* Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests/Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		38AEE269CFAF59A2433AA95E /* Pods_QNWhiteBoardDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QNWhiteBoardDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4292F21F97C77FFD7BC28B5A /* Pods-QNWhiteBoardDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNWhiteBoardDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-QNWhiteBoardDemoTests/Pods-QNWhiteBoardDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		58D8BCBBDD33EC61A7CD4E7B /* Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests/Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EB93A17CE9923AE1DB551A1 /* Pods-QNWhiteBoardDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNWhiteBoardDemo.release.xcconfig"; path = "Target Support Files/Pods-QNWhiteBoardDemo/Pods-QNWhiteBoardDemo.release.xcconfig"; sourceTree = "<group>"; };
+		71D287C693793CAAF49E9FAF /* Pods_QNWhiteBoardDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QNWhiteBoardDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		776737E5266F29CB006AC9F7 /* QNStartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNStartViewController.h; sourceTree = "<group>"; };
+		776737E6266F29CB006AC9F7 /* QNStartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNStartViewController.m; sourceTree = "<group>"; };
+		77B11AD8264E1D98007A3892 /* QNWhiteBoardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QNWhiteBoardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77B11ADB264E1D98007A3892 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77B11ADC264E1D98007A3892 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		77B11AE5264E1D98007A3892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77B11AE7264E1D9B007A3892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77B11AEA264E1D9B007A3892 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77B11AEC264E1D9B007A3892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77B11AED264E1D9B007A3892 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77B11AF3264E1D9B007A3892 /* QNWhiteBoardDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QNWhiteBoardDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77B11AF7264E1D9B007A3892 /* QNWhiteBoardDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardDemoTests.m; sourceTree = "<group>"; };
+		77B11AF9264E1D9B007A3892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77B11AFE264E1D9B007A3892 /* QNWhiteBoardDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QNWhiteBoardDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77B11B02264E1D9B007A3892 /* QNWhiteBoardDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardDemoUITests.m; sourceTree = "<group>"; };
+		77B11B04264E1D9B007A3892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77B11B48264E289C007A3892 /* QNWhiteBoardDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardDemoController.m; sourceTree = "<group>"; };
+		77B11B49264E289C007A3892 /* QNWhiteBoardDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardDemoController.h; sourceTree = "<group>"; };
+		77B11F1526565DDD007A3892 /* QNWhiteBoardLaserToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardLaserToolbar.h; sourceTree = "<group>"; };
+		77B11F1626565DDD007A3892 /* QNWhiteBoardPrimaryToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardPrimaryToolbar.h; sourceTree = "<group>"; };
+		77B11F1726565DDD007A3892 /* QNWhiteBoardSizeSelectionToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardSizeSelectionToolbar.m; sourceTree = "<group>"; };
+		77B11F1826565DDD007A3892 /* QNWhiteBoardPenToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardPenToolbar.h; sourceTree = "<group>"; };
+		77B11F1926565DDE007A3892 /* QNWhiteBoardButtonGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardButtonGroup.m; sourceTree = "<group>"; };
+		77B11F1A26565DDE007A3892 /* QNWhiteBoardToolbarColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardToolbarColorButton.h; sourceTree = "<group>"; };
+		77B11F1B26565DDE007A3892 /* QNWhiteBoardSubjectToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardSubjectToolbar.h; sourceTree = "<group>"; };
+		77B11F1C26565DDE007A3892 /* QNWhiteBoardPenToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardPenToolbar.m; sourceTree = "<group>"; };
+		77B11F1D26565DDE007A3892 /* QNWhiteBoardButtonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardButtonGroup.h; sourceTree = "<group>"; };
+		77B11F1E26565DDE007A3892 /* QNWhiteBoardColorToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardColorToolbar.m; sourceTree = "<group>"; };
+		77B11F1F26565DDE007A3892 /* QNWhiteBoardEraseToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardEraseToolbar.h; sourceTree = "<group>"; };
+		77B11F2026565DDE007A3892 /* QNWhiteBoardExpandableToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardExpandableToolbar.h; sourceTree = "<group>"; };
+		77B11F2126565DDF007A3892 /* QNWhiteBoardSizeSelectionToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardSizeSelectionToolbar.h; sourceTree = "<group>"; };
+		77B11F2226565DDF007A3892 /* QNWhiteBoardPrimaryToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardPrimaryToolbar.m; sourceTree = "<group>"; };
+		77B11F2326565DDF007A3892 /* QNWhiteBoardLaserToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardLaserToolbar.m; sourceTree = "<group>"; };
+		77B11F2426565DDF007A3892 /* QNWhiteBoardBaseToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardBaseToolbar.m; sourceTree = "<group>"; };
+		77B11F2526565DDF007A3892 /* QNWhiteBoardEraseToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardEraseToolbar.m; sourceTree = "<group>"; };
+		77B11F2626565DDF007A3892 /* QNWhiteBoardBaseToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardBaseToolbar.h; sourceTree = "<group>"; };
+		77B11F2726565DE0007A3892 /* QNWhiteBoardGeometryToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardGeometryToolbar.m; sourceTree = "<group>"; };
+		77B11F2826565DE0007A3892 /* QNWhiteBoardColorToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardColorToolbar.h; sourceTree = "<group>"; };
+		77B11F2926565DE0007A3892 /* QNWhiteBoardToolbarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardToolbarDelegate.h; sourceTree = "<group>"; };
+		77B11F2A26565DE0007A3892 /* QNWhiteBoardSubjectToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardSubjectToolbar.m; sourceTree = "<group>"; };
+		77B11F2B26565DE0007A3892 /* QNWhiteBoardGeometryToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardGeometryToolbar.h; sourceTree = "<group>"; };
+		77B11F2C26565DE1007A3892 /* QNWhiteBoardToolbarColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardToolbarColorButton.m; sourceTree = "<group>"; };
+		77B11F2D26565DE1007A3892 /* QNWhiteBoardExpandableToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardExpandableToolbar.m; sourceTree = "<group>"; };
+		77B11F3E26565E4D007A3892 /* QNWhiteBoardFloatingMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardFloatingMenu.h; sourceTree = "<group>"; };
+		77B11F3F26565E4D007A3892 /* QNWhiteBoardFloatingMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardFloatingMenu.m; sourceTree = "<group>"; };
+		77B11F4626565E7A007A3892 /* QNSelectResourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNSelectResourceViewController.m; sourceTree = "<group>"; };
+		77B11F4726565E7A007A3892 /* thunder_4.0.1.14502.dmg */ = {isa = PBXFileReference; lastKnownFileType = file; path = thunder_4.0.1.14502.dmg; sourceTree = "<group>"; };
+		77B11F4826565E7A007A3892 /* QNSelectResourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNSelectResourceViewController.h; sourceTree = "<group>"; };
+		77B11F4926565E7A007A3892 /* QNSelectResourceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QNSelectResourceViewController.xib; sourceTree = "<group>"; };
+		77B11F4B26565E7B007A3892 /* QNWhiteBoardPageCellHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardPageCellHeader.m; sourceTree = "<group>"; };
+		77B11F4C26565E7B007A3892 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		77B11F4D26565E7B007A3892 /* QNWhiteBoardPageListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardPageListView.m; sourceTree = "<group>"; };
+		77B11F4E26565E7B007A3892 /* QNWhiteBoardPageInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardPageInfoCell.h; sourceTree = "<group>"; };
+		77B11F4F26565E7B007A3892 /* QNWhiteBoardPageInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QNWhiteBoardPageInfoCell.xib; sourceTree = "<group>"; };
+		77B11F5026565E7B007A3892 /* QNWhiteBoardPageListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QNWhiteBoardPageListView.xib; sourceTree = "<group>"; };
+		77B11F5126565E7B007A3892 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		77B11F5226565E7B007A3892 /* QNWhiteBoardPageCellHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardPageCellHeader.h; sourceTree = "<group>"; };
+		77B11F5326565E7B007A3892 /* QNWhiteBoardPageListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardPageListView.h; sourceTree = "<group>"; };
+		77B11F5426565E7B007A3892 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		77B11F5526565E7B007A3892 /* QNWhiteBoardPageInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardPageInfoCell.m; sourceTree = "<group>"; };
+		77B11F5626565E7B007A3892 /* QNWhiteBoardPageCellHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QNWhiteBoardPageCellHeader.xib; sourceTree = "<group>"; };
+		77B11F5826565E7B007A3892 /* QNWhiteBoardPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNWhiteBoardPageControl.m; sourceTree = "<group>"; };
+		77B11F5926565E7B007A3892 /* QNWhiteBoardPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardPageControl.h; sourceTree = "<group>"; };
+		77B11F5A26565E7B007A3892 /* QNWhiteBoardPageControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QNWhiteBoardPageControl.xib; sourceTree = "<group>"; };
+		77B11FC326579F6A007A3892 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77C751DA26A6A52D00866349 /* QNWhiteBoardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QNWhiteBoardSDK.framework; sourceTree = "<group>"; };
+		B2B8E99D42440E814090E31C /* Pods-QNWhiteBoardDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNWhiteBoardDemoTests.release.xcconfig"; path = "Target Support Files/Pods-QNWhiteBoardDemoTests/Pods-QNWhiteBoardDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E3ED9C702652680E0021A537 /* QNWhiteBoardSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QNWhiteBoardSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1358E001BDC04E50AE022D5 /* Pods-QNWhiteBoardDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNWhiteBoardDemo.debug.xcconfig"; path = "Target Support Files/Pods-QNWhiteBoardDemo/Pods-QNWhiteBoardDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77B11AD5264E1D98007A3892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77C751DC26A6A53100866349 /* QNWhiteBoardSDK.framework in Frameworks */,
+				77B11FC526579F7E007A3892 /* SDWebImage.framework in Frameworks */,
+				7B930DBA19173BA3B0F467C4 /* Pods_QNWhiteBoardDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B11AF0264E1D9B007A3892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EB55FA579ABD7C41B454F2F /* Pods_QNWhiteBoardDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B11AFB264E1D9B007A3892 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F19D5351D15443853C4A9ED /* Pods_QNWhiteBoardDemo_QNWhiteBoardDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		646EBBA9509844A20422277A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1358E001BDC04E50AE022D5 /* Pods-QNWhiteBoardDemo.debug.xcconfig */,
+				6EB93A17CE9923AE1DB551A1 /* Pods-QNWhiteBoardDemo.release.xcconfig */,
+				58D8BCBBDD33EC61A7CD4E7B /* Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests.debug.xcconfig */,
+				1CF88AE052C8567F65B71497 /* Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests.release.xcconfig */,
+				4292F21F97C77FFD7BC28B5A /* Pods-QNWhiteBoardDemoTests.debug.xcconfig */,
+				B2B8E99D42440E814090E31C /* Pods-QNWhiteBoardDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		77B11ACF264E1D98007A3892 = {
+			isa = PBXGroup;
+			children = (
+				77C751DA26A6A52D00866349 /* QNWhiteBoardSDK.framework */,
+				77B11ADA264E1D98007A3892 /* QNWhiteBoardDemo */,
+				77B11AF6264E1D9B007A3892 /* QNWhiteBoardDemoTests */,
+				77B11B01264E1D9B007A3892 /* QNWhiteBoardDemoUITests */,
+				77B11AD9264E1D98007A3892 /* Products */,
+				77B11B7B264E34B6007A3892 /* Frameworks */,
+				646EBBA9509844A20422277A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		77B11AD9264E1D98007A3892 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77B11AD8264E1D98007A3892 /* QNWhiteBoardDemo.app */,
+				77B11AF3264E1D9B007A3892 /* QNWhiteBoardDemoTests.xctest */,
+				77B11AFE264E1D9B007A3892 /* QNWhiteBoardDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77B11ADA264E1D98007A3892 /* QNWhiteBoardDemo */ = {
+			isa = PBXGroup;
+			children = (
+				77B11FDC265E30C0007A3892 /* QNWhiteBoardUI */,
+				77B11ADB264E1D98007A3892 /* AppDelegate.h */,
+				77B11ADC264E1D98007A3892 /* AppDelegate.m */,
+				776737E5266F29CB006AC9F7 /* QNStartViewController.h */,
+				776737E6266F29CB006AC9F7 /* QNStartViewController.m */,
+				77B11B49264E289C007A3892 /* QNWhiteBoardDemoController.h */,
+				77B11B48264E289C007A3892 /* QNWhiteBoardDemoController.m */,
+				77B11AE7264E1D9B007A3892 /* Assets.xcassets */,
+				77B11AE4264E1D98007A3892 /* Main.storyboard */,
+				77B11AE9264E1D9B007A3892 /* LaunchScreen.storyboard */,
+				77B11AEC264E1D9B007A3892 /* Info.plist */,
+				77B11AED264E1D9B007A3892 /* main.m */,
+			);
+			path = QNWhiteBoardDemo;
+			sourceTree = "<group>";
+		};
+		77B11AF6264E1D9B007A3892 /* QNWhiteBoardDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				77B11AF7264E1D9B007A3892 /* QNWhiteBoardDemoTests.m */,
+				77B11AF9264E1D9B007A3892 /* Info.plist */,
+			);
+			path = QNWhiteBoardDemoTests;
+			sourceTree = "<group>";
+		};
+		77B11B01264E1D9B007A3892 /* QNWhiteBoardDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				77B11B02264E1D9B007A3892 /* QNWhiteBoardDemoUITests.m */,
+				77B11B04264E1D9B007A3892 /* Info.plist */,
+			);
+			path = QNWhiteBoardDemoUITests;
+			sourceTree = "<group>";
+		};
+		77B11B7B264E34B6007A3892 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77B11FC326579F6A007A3892 /* SDWebImage.framework */,
+				E3ED9C702652680E0021A537 /* QNWhiteBoardSDK.framework */,
+				38AEE269CFAF59A2433AA95E /* Pods_QNWhiteBoardDemo.framework */,
+				14F93B412B0C44249C96C106 /* Pods_QNWhiteBoardDemo_QNWhiteBoardDemoUITests.framework */,
+				71D287C693793CAAF49E9FAF /* Pods_QNWhiteBoardDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77B11E6E2653A142007A3892 /* QNWidgetMenu */ = {
+			isa = PBXGroup;
+			children = (
+				77B11F3E26565E4D007A3892 /* QNWhiteBoardFloatingMenu.h */,
+				77B11F3F26565E4D007A3892 /* QNWhiteBoardFloatingMenu.m */,
+			);
+			path = QNWidgetMenu;
+			sourceTree = "<group>";
+		};
+		77B11E872653A144007A3892 /* QNToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				77B11F2626565DDF007A3892 /* QNWhiteBoardBaseToolbar.h */,
+				77B11F2426565DDF007A3892 /* QNWhiteBoardBaseToolbar.m */,
+				77B11F2826565DE0007A3892 /* QNWhiteBoardColorToolbar.h */,
+				77B11F1E26565DDE007A3892 /* QNWhiteBoardColorToolbar.m */,
+				77B11F1F26565DDE007A3892 /* QNWhiteBoardEraseToolbar.h */,
+				77B11F2526565DDF007A3892 /* QNWhiteBoardEraseToolbar.m */,
+				77B11F2026565DDE007A3892 /* QNWhiteBoardExpandableToolbar.h */,
+				77B11F2D26565DE1007A3892 /* QNWhiteBoardExpandableToolbar.m */,
+				77B11F2B26565DE0007A3892 /* QNWhiteBoardGeometryToolbar.h */,
+				77B11F2726565DE0007A3892 /* QNWhiteBoardGeometryToolbar.m */,
+				77B11F1526565DDD007A3892 /* QNWhiteBoardLaserToolbar.h */,
+				77B11F2326565DDF007A3892 /* QNWhiteBoardLaserToolbar.m */,
+				77B11F1826565DDD007A3892 /* QNWhiteBoardPenToolbar.h */,
+				77B11F1C26565DDE007A3892 /* QNWhiteBoardPenToolbar.m */,
+				77B11F1626565DDD007A3892 /* QNWhiteBoardPrimaryToolbar.h */,
+				77B11F2226565DDF007A3892 /* QNWhiteBoardPrimaryToolbar.m */,
+				77B11F2126565DDF007A3892 /* QNWhiteBoardSizeSelectionToolbar.h */,
+				77B11F1726565DDD007A3892 /* QNWhiteBoardSizeSelectionToolbar.m */,
+				77B11F1B26565DDE007A3892 /* QNWhiteBoardSubjectToolbar.h */,
+				77B11F2A26565DE0007A3892 /* QNWhiteBoardSubjectToolbar.m */,
+				77B11F1A26565DDE007A3892 /* QNWhiteBoardToolbarColorButton.h */,
+				77B11F2C26565DE1007A3892 /* QNWhiteBoardToolbarColorButton.m */,
+				77B11F2926565DE0007A3892 /* QNWhiteBoardToolbarDelegate.h */,
+				77B11F1D26565DDE007A3892 /* QNWhiteBoardButtonGroup.h */,
+				77B11F1926565DDE007A3892 /* QNWhiteBoardButtonGroup.m */,
+			);
+			path = QNToolbar;
+			sourceTree = "<group>";
+		};
+		77B11F4526565E7A007A3892 /* QNSelectResourceView */ = {
+			isa = PBXGroup;
+			children = (
+				77B11F4826565E7A007A3892 /* QNSelectResourceViewController.h */,
+				77B11F4626565E7A007A3892 /* QNSelectResourceViewController.m */,
+				77B11F4926565E7A007A3892 /* QNSelectResourceViewController.xib */,
+				77B11F4726565E7A007A3892 /* thunder_4.0.1.14502.dmg */,
+			);
+			path = QNSelectResourceView;
+			sourceTree = "<group>";
+		};
+		77B11F4A26565E7B007A3892 /* QNPageThumbnailsView */ = {
+			isa = PBXGroup;
+			children = (
+				77B11F5226565E7B007A3892 /* QNWhiteBoardPageCellHeader.h */,
+				77B11F4B26565E7B007A3892 /* QNWhiteBoardPageCellHeader.m */,
+				77B11F5626565E7B007A3892 /* QNWhiteBoardPageCellHeader.xib */,
+				77B11F4E26565E7B007A3892 /* QNWhiteBoardPageInfoCell.h */,
+				77B11F5526565E7B007A3892 /* QNWhiteBoardPageInfoCell.m */,
+				77B11F4F26565E7B007A3892 /* QNWhiteBoardPageInfoCell.xib */,
+				77B11F5326565E7B007A3892 /* QNWhiteBoardPageListView.h */,
+				77B11F4D26565E7B007A3892 /* QNWhiteBoardPageListView.m */,
+				77B11F5026565E7B007A3892 /* QNWhiteBoardPageListView.xib */,
+				77B11F5426565E7B007A3892 /* TableViewCell.h */,
+				77B11F4C26565E7B007A3892 /* TableViewCell.m */,
+				77B11F5126565E7B007A3892 /* TableViewCell.xib */,
+			);
+			path = QNPageThumbnailsView;
+			sourceTree = "<group>";
+		};
+		77B11F5726565E7B007A3892 /* QNPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				77B11F5926565E7B007A3892 /* QNWhiteBoardPageControl.h */,
+				77B11F5826565E7B007A3892 /* QNWhiteBoardPageControl.m */,
+				77B11F5A26565E7B007A3892 /* QNWhiteBoardPageControl.xib */,
+			);
+			path = QNPageControl;
+			sourceTree = "<group>";
+		};
+		77B11FDC265E30C0007A3892 /* QNWhiteBoardUI */ = {
+			isa = PBXGroup;
+			children = (
+				77B11F5726565E7B007A3892 /* QNPageControl */,
+				77B11F4A26565E7B007A3892 /* QNPageThumbnailsView */,
+				77B11F4526565E7A007A3892 /* QNSelectResourceView */,
+				77B11E872653A144007A3892 /* QNToolbar */,
+				77B11E6E2653A142007A3892 /* QNWidgetMenu */,
+			);
+			path = QNWhiteBoardUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77B11AD7264E1D98007A3892 /* QNWhiteBoardDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77B11B07264E1D9B007A3892 /* Build configuration list for PBXNativeTarget "QNWhiteBoardDemo" */;
+			buildPhases = (
+				BABA55D680B8C9B6085B21D1 /* [CP] Check Pods Manifest.lock */,
+				77B11AD4264E1D98007A3892 /* Sources */,
+				77B11AD5264E1D98007A3892 /* Frameworks */,
+				77B11AD6264E1D98007A3892 /* Resources */,
+				58105EAEE74F62313FD3AC27 /* [CP] Embed Pods Frameworks */,
+				77C751DE26A6A53100866349 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QNWhiteBoardDemo;
+			productName = QNWhiteBoardDemo;
+			productReference = 77B11AD8264E1D98007A3892 /* QNWhiteBoardDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77B11AF2264E1D9B007A3892 /* QNWhiteBoardDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77B11B0A264E1D9B007A3892 /* Build configuration list for PBXNativeTarget "QNWhiteBoardDemoTests" */;
+			buildPhases = (
+				FBCECF0431768F5B59E7BE73 /* [CP] Check Pods Manifest.lock */,
+				77B11AEF264E1D9B007A3892 /* Sources */,
+				77B11AF0264E1D9B007A3892 /* Frameworks */,
+				77B11AF1264E1D9B007A3892 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77B11AF5264E1D9B007A3892 /* PBXTargetDependency */,
+			);
+			name = QNWhiteBoardDemoTests;
+			productName = QNWhiteBoardDemoTests;
+			productReference = 77B11AF3264E1D9B007A3892 /* QNWhiteBoardDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77B11AFD264E1D9B007A3892 /* QNWhiteBoardDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77B11B0D264E1D9B007A3892 /* Build configuration list for PBXNativeTarget "QNWhiteBoardDemoUITests" */;
+			buildPhases = (
+				59F03FC7EBD2578538061AC6 /* [CP] Check Pods Manifest.lock */,
+				77B11AFA264E1D9B007A3892 /* Sources */,
+				77B11AFB264E1D9B007A3892 /* Frameworks */,
+				77B11AFC264E1D9B007A3892 /* Resources */,
+				2525B8016F8238933267463C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77B11B00264E1D9B007A3892 /* PBXTargetDependency */,
+			);
+			name = QNWhiteBoardDemoUITests;
+			productName = QNWhiteBoardDemoUITests;
+			productReference = 77B11AFE264E1D9B007A3892 /* QNWhiteBoardDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77B11AD0264E1D98007A3892 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					77B11AD7264E1D98007A3892 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					77B11AF2264E1D9B007A3892 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 77B11AD7264E1D98007A3892;
+					};
+					77B11AFD264E1D9B007A3892 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 77B11AD7264E1D98007A3892;
+					};
+				};
+			};
+			buildConfigurationList = 77B11AD3264E1D98007A3892 /* Build configuration list for PBXProject "QNWhiteBoardDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77B11ACF264E1D98007A3892;
+			productRefGroup = 77B11AD9264E1D98007A3892 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77B11AD7264E1D98007A3892 /* QNWhiteBoardDemo */,
+				77B11AF2264E1D9B007A3892 /* QNWhiteBoardDemoTests */,
+				77B11AFD264E1D9B007A3892 /* QNWhiteBoardDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77B11AD6264E1D98007A3892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B11F6726565E7B007A3892 /* QNWhiteBoardPageControl.xib in Resources */,
+				77B11F6126565E7B007A3892 /* QNWhiteBoardPageInfoCell.xib in Resources */,
+				77B11AEB264E1D9B007A3892 /* LaunchScreen.storyboard in Resources */,
+				77B11F5C26565E7B007A3892 /* thunder_4.0.1.14502.dmg in Resources */,
+				77B11F6526565E7B007A3892 /* QNWhiteBoardPageCellHeader.xib in Resources */,
+				77B11AE8264E1D9B007A3892 /* Assets.xcassets in Resources */,
+				77B11AE6264E1D98007A3892 /* Main.storyboard in Resources */,
+				77B11F6326565E7B007A3892 /* TableViewCell.xib in Resources */,
+				77B11F6226565E7B007A3892 /* QNWhiteBoardPageListView.xib in Resources */,
+				77B11F5D26565E7B007A3892 /* QNSelectResourceViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B11AF1264E1D9B007A3892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B11AFC264E1D9B007A3892 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2525B8016F8238933267463C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests/Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests/Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests/Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58105EAEE74F62313FD3AC27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QNWhiteBoardDemo/Pods-QNWhiteBoardDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QNWhiteBoardDemo/Pods-QNWhiteBoardDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QNWhiteBoardDemo/Pods-QNWhiteBoardDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59F03FC7EBD2578538061AC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BABA55D680B8C9B6085B21D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QNWhiteBoardDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBCECF0431768F5B59E7BE73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QNWhiteBoardDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77B11AD4264E1D98007A3892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B11F3826565DE1007A3892 /* QNWhiteBoardToolbarColorButton.m in Sources */,
+				77B11F6626565E7B007A3892 /* QNWhiteBoardPageControl.m in Sources */,
+				77B11F5B26565E7B007A3892 /* QNSelectResourceViewController.m in Sources */,
+				776737E7266F29CB006AC9F7 /* QNStartViewController.m in Sources */,
+				77B11F2F26565DE1007A3892 /* QNWhiteBoardButtonGroup.m in Sources */,
+				77B11F3626565DE1007A3892 /* QNWhiteBoardGeometryToolbar.m in Sources */,
+				77B11F3026565DE1007A3892 /* QNWhiteBoardPenToolbar.m in Sources */,
+				77B11F3526565DE1007A3892 /* QNWhiteBoardEraseToolbar.m in Sources */,
+				77B11F5F26565E7B007A3892 /* TableViewCell.m in Sources */,
+				77B11ADD264E1D98007A3892 /* AppDelegate.m in Sources */,
+				77B11F3926565DE1007A3892 /* QNWhiteBoardExpandableToolbar.m in Sources */,
+				77B11F5E26565E7B007A3892 /* QNWhiteBoardPageCellHeader.m in Sources */,
+				77B11F6426565E7B007A3892 /* QNWhiteBoardPageInfoCell.m in Sources */,
+				77B11AEE264E1D9B007A3892 /* main.m in Sources */,
+				77B11B4A264E289C007A3892 /* QNWhiteBoardDemoController.m in Sources */,
+				77B11F4026565E4D007A3892 /* QNWhiteBoardFloatingMenu.m in Sources */,
+				77B11F3326565DE1007A3892 /* QNWhiteBoardLaserToolbar.m in Sources */,
+				77B11F3726565DE1007A3892 /* QNWhiteBoardSubjectToolbar.m in Sources */,
+				77B11F3226565DE1007A3892 /* QNWhiteBoardPrimaryToolbar.m in Sources */,
+				77B11F2E26565DE1007A3892 /* QNWhiteBoardSizeSelectionToolbar.m in Sources */,
+				77B11F6026565E7B007A3892 /* QNWhiteBoardPageListView.m in Sources */,
+				77B11F3426565DE1007A3892 /* QNWhiteBoardBaseToolbar.m in Sources */,
+				77B11F3126565DE1007A3892 /* QNWhiteBoardColorToolbar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B11AEF264E1D9B007A3892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B11AF8264E1D9B007A3892 /* QNWhiteBoardDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B11AFA264E1D9B007A3892 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B11B03264E1D9B007A3892 /* QNWhiteBoardDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77B11AF5264E1D9B007A3892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77B11AD7264E1D98007A3892 /* QNWhiteBoardDemo */;
+			targetProxy = 77B11AF4264E1D9B007A3892 /* PBXContainerItemProxy */;
+		};
+		77B11B00264E1D9B007A3892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77B11AD7264E1D98007A3892 /* QNWhiteBoardDemo */;
+			targetProxy = 77B11AFF264E1D9B007A3892 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		77B11AE4264E1D98007A3892 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77B11AE5264E1D98007A3892 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77B11AE9264E1D9B007A3892 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77B11AEA264E1D9B007A3892 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77B11B05264E1D9B007A3892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		77B11B06264E1D9B007A3892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77B11B08264E1D9B007A3892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1358E001BDC04E50AE022D5 /* Pods-QNWhiteBoardDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QNWhiteBoardDemo",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = QNWhiteBoardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QNWhiteBoardDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77B11B09264E1D9B007A3892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EB93A17CE9923AE1DB551A1 /* Pods-QNWhiteBoardDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QNWhiteBoardDemo",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = QNWhiteBoardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = "-Objc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QNWhiteBoardDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		77B11B0B264E1D9B007A3892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4292F21F97C77FFD7BC28B5A /* Pods-QNWhiteBoardDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				INFOPLIST_FILE = QNWhiteBoardDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QNWhiteBoardDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QNWhiteBoardDemo.app/QNWhiteBoardDemo";
+			};
+			name = Debug;
+		};
+		77B11B0C264E1D9B007A3892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B8E99D42440E814090E31C /* Pods-QNWhiteBoardDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				INFOPLIST_FILE = QNWhiteBoardDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QNWhiteBoardDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QNWhiteBoardDemo.app/QNWhiteBoardDemo";
+			};
+			name = Release;
+		};
+		77B11B0E264E1D9B007A3892 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58D8BCBBDD33EC61A7CD4E7B /* Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				INFOPLIST_FILE = QNWhiteBoardDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QNWhiteBoardDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QNWhiteBoardDemo;
+			};
+			name = Debug;
+		};
+		77B11B0F264E1D9B007A3892 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CF88AE052C8567F65B71497 /* Pods-QNWhiteBoardDemo-QNWhiteBoardDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GDFHW66V92;
+				INFOPLIST_FILE = QNWhiteBoardDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QNWhiteBoardDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QNWhiteBoardDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77B11AD3264E1D98007A3892 /* Build configuration list for PBXProject "QNWhiteBoardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77B11B05264E1D9B007A3892 /* Debug */,
+				77B11B06264E1D9B007A3892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77B11B07264E1D9B007A3892 /* Build configuration list for PBXNativeTarget "QNWhiteBoardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77B11B08264E1D9B007A3892 /* Debug */,
+				77B11B09264E1D9B007A3892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77B11B0A264E1D9B007A3892 /* Build configuration list for PBXNativeTarget "QNWhiteBoardDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77B11B0B264E1D9B007A3892 /* Debug */,
+				77B11B0C264E1D9B007A3892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77B11B0D264E1D9B007A3892 /* Build configuration list for PBXNativeTarget "QNWhiteBoardDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77B11B0E264E1D9B007A3892 /* Debug */,
+				77B11B0F264E1D9B007A3892 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77B11AD0264E1D98007A3892 /* Project object */;
+}
