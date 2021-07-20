@@ -43,9 +43,9 @@
 		77B11F6526565E7B007A3892 /* QNWhiteBoardPageCellHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B11F5626565E7B007A3892 /* QNWhiteBoardPageCellHeader.xib */; };
 		77B11F6626565E7B007A3892 /* QNWhiteBoardPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B11F5826565E7B007A3892 /* QNWhiteBoardPageControl.m */; };
 		77B11F6726565E7B007A3892 /* QNWhiteBoardPageControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77B11F5A26565E7B007A3892 /* QNWhiteBoardPageControl.xib */; };
-		77B11FC526579F7E007A3892 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B11FC326579F6A007A3892 /* SDWebImage.framework */; };
-		77C751DC26A6A53100866349 /* QNWhiteBoardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C751DA26A6A52D00866349 /* QNWhiteBoardSDK.framework */; };
-		77C751DD26A6A53100866349 /* QNWhiteBoardSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77C751DA26A6A52D00866349 /* QNWhiteBoardSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		77C7521526A6C95200866349 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B11FC326579F6A007A3892 /* SDWebImage.framework */; };
+		77C7521926A6C96100866349 /* QNWhiteBoardSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C7521126A6C90200866349 /* QNWhiteBoardSDK.framework */; };
+		77C7521A26A6C96100866349 /* QNWhiteBoardSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 77C7521126A6C90200866349 /* QNWhiteBoardSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B930DBA19173BA3B0F467C4 /* Pods_QNWhiteBoardDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38AEE269CFAF59A2433AA95E /* Pods_QNWhiteBoardDemo.framework */; };
 		7EB55FA579ABD7C41B454F2F /* Pods_QNWhiteBoardDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D287C693793CAAF49E9FAF /* Pods_QNWhiteBoardDemoTests.framework */; };
 /* End PBXBuildFile section */
@@ -68,13 +68,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		77C751DE26A6A53100866349 /* Embed Frameworks */ = {
+		77C7521B26A6C96100866349 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				77C751DD26A6A53100866349 /* QNWhiteBoardSDK.framework in Embed Frameworks */,
+				77C7521A26A6C96100866349 /* QNWhiteBoardSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,7 +154,7 @@
 		77B11F5926565E7B007A3892 /* QNWhiteBoardPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNWhiteBoardPageControl.h; sourceTree = "<group>"; };
 		77B11F5A26565E7B007A3892 /* QNWhiteBoardPageControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QNWhiteBoardPageControl.xib; sourceTree = "<group>"; };
 		77B11FC326579F6A007A3892 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		77C751DA26A6A52D00866349 /* QNWhiteBoardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QNWhiteBoardSDK.framework; sourceTree = "<group>"; };
+		77C7521126A6C90200866349 /* QNWhiteBoardSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QNWhiteBoardSDK.framework; sourceTree = "<group>"; };
 		B2B8E99D42440E814090E31C /* Pods-QNWhiteBoardDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNWhiteBoardDemoTests.release.xcconfig"; path = "Target Support Files/Pods-QNWhiteBoardDemoTests/Pods-QNWhiteBoardDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		E3ED9C702652680E0021A537 /* QNWhiteBoardSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = QNWhiteBoardSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1358E001BDC04E50AE022D5 /* Pods-QNWhiteBoardDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNWhiteBoardDemo.debug.xcconfig"; path = "Target Support Files/Pods-QNWhiteBoardDemo/Pods-QNWhiteBoardDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -165,8 +165,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77C751DC26A6A53100866349 /* QNWhiteBoardSDK.framework in Frameworks */,
-				77B11FC526579F7E007A3892 /* SDWebImage.framework in Frameworks */,
+				77C7521926A6C96100866349 /* QNWhiteBoardSDK.framework in Frameworks */,
+				77C7521526A6C95200866349 /* SDWebImage.framework in Frameworks */,
 				7B930DBA19173BA3B0F467C4 /* Pods_QNWhiteBoardDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +206,7 @@
 		77B11ACF264E1D98007A3892 = {
 			isa = PBXGroup;
 			children = (
-				77C751DA26A6A52D00866349 /* QNWhiteBoardSDK.framework */,
+				77C7521126A6C90200866349 /* QNWhiteBoardSDK.framework */,
 				77B11ADA264E1D98007A3892 /* QNWhiteBoardDemo */,
 				77B11AF6264E1D9B007A3892 /* QNWhiteBoardDemoTests */,
 				77B11B01264E1D9B007A3892 /* QNWhiteBoardDemoUITests */,
@@ -380,7 +380,7 @@
 				77B11AD5264E1D98007A3892 /* Frameworks */,
 				77B11AD6264E1D98007A3892 /* Resources */,
 				58105EAEE74F62313FD3AC27 /* [CP] Embed Pods Frameworks */,
-				77C751DE26A6A53100866349 /* Embed Frameworks */,
+				77C7521B26A6C96100866349 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
