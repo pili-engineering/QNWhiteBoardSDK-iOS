@@ -23,26 +23,7 @@ ios版本的白板控件的类前缀都是QNWhiteBoard,framework的名字是QNWh
 -  `initializeWhiteboard`视图初始化完毕后调用此接口来初始化白板
 - `closeWhiteboard` 在视图被销毁时调用此接口关闭白板
 
-在两个接口调用中间 
-```
--(void)viewDidLoad
-{
-    [super initalizeWhiteboard];
-    //接下来可以加入房间了
-}
 
--(void)viewDidDisappear:(BOOL)animated
-{
-    if(self.isMovingFromParentViewController)
-    {
-        //离开房间先
-        [[QNWhiteboardControl instance] leaveRoom];
-		//销毁各种资源
-        [super closeWhiteboard];
-    
-    }
-}
-```
 ## 白板截图
 仅在[QNWhiteBoardViewController](#QNWhiteBoardViewController)附加到布局中时有效（即必须有可见的白板），屏幕截图是需要直接调用QNWhiteBoardViewController的如下方法，无论是否在主线程都可以调用，返回是直接返回一个临时地址，存储了snapshot的图片，回调一定不是在主线程中。
 
