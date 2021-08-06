@@ -6,12 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "QNWhiteBoardDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface QNWhiteBoardInfo : NSObject
 
-@property (nonatomic,assign) int status;
+@property (nonatomic,assign) QNWBBoardStatus status;
 @property (nonatomic,assign) float maxWidth;
 @property (nonatomic,assign) float maxHeight;
 @property (nonatomic,assign) float displayWidth;

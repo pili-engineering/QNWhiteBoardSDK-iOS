@@ -65,41 +65,42 @@
     
 }
 
--(void)viewDidDisappear:(BOOL)animated
-{
-    if(self.isMovingFromParentViewController)
-    {
-//        [[QNWhiteboardControl instance] leaveRoom];
-//        [super closeWhiteboard];
-    }
-}
-
 - (void)addView:(UIView *)view_ {
     [self.view addSubview:view_];
 }
 
 -(void)onBackPressed
 {
-    [self dismissViewControllerAnimated:YES completion:^{
-        [[QNWhiteboardControl instance] leaveRoom];
-        [super closeWhiteboard];
-    }];
+    [[QNWhiteboardControl instance] cleanPage:[[QNWhiteboardControl instance] getCurrentPage].pageId];
+
 }
 
 -(void)joinRoom
 {
     [[QNWhiteboardControl instance] addListener:self];
-    [[QNWhiteboardControl instance] joinRoom:self.roomToken widthHeightThan:1.5];
+    [[QNWhiteboardControl instance] joinRoom:self.roomToken widthHeightThan:0.5];
     [[QNWhiteboardControl instance] setBackgroundColor:@"#55FF0000"];
-    
-}
-
-- (void)onJoinFailed:(int)errorCode {
     
 }
 
 - (void)onJoinSuccess:(QNWhiteBoardRoom *)room who:(QNWhiteBoardRoomMember *)me {
     
+    QNWhiteBoardInfo *info = [[QNWhiteboardControl instance] getViewPort];
+    NSLog(@"-----------%@",info);
+}
+
+//文档被滚动到顶部或底部时触发
+- (void)onWidgetScrolled:(QNWhiteBoardWidgetScrollInfo *)info {
+    
+}
+
+//页面被清空时触发
+- (void)onBoardCleaned:(NSString *)pageId_ {
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        [[QNWhiteboardControl instance] leaveRoom];
+        [super closeWhiteboard];
+    }];
 }
                      
 @end

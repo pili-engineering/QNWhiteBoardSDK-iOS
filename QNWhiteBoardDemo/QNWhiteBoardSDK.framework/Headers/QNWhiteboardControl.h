@@ -19,6 +19,7 @@
 #import <QNWhiteBoardSDK/QNWhiteboardConfig.h>
 #import <QNWhiteBoardSDK/QNWhiteBoardDefine.h>
 #import <QNWhiteBoardSDK/QNWhiteBoardRoomMember.h>
+#import <QNWhiteBoardSDK/QNWhiteBoardWidgetScrollInfo.h>
 #import <UIKit/UIKit.h>
 #import <QNWhiteBoardSDK/QNWhiteBoardInfo.h>
 

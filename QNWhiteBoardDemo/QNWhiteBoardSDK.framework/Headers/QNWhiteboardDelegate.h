@@ -15,6 +15,7 @@
 #import <QNWhiteBoardSDK/QNWhiteBoardFileInfo.h>
 #import <QNWhiteBoardSDK/QNWhiteBoardPageInfo.h>
 #import <QNWhiteBoardSDK/QNWhiteBoardDefine.h>
+#import <QNWhiteBoardSDK/QNWhiteBoardWidgetScrollInfo.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -150,6 +151,15 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 -(void)onBoardScroll:(QNWhiteBoardInfo*)info_;
 
+
+/**
+ 页面被清空
+ @param pageId_ 被清空页面的id
+ */
+@optional
+-(void)onBoardCleaned:(NSString *)pageId_;
+
+
  /**
   * 白板背景色变化时触发，首次进入白板也会触发
   *
@@ -174,6 +184,14 @@ NS_ASSUME_NONNULL_BEGIN
   */
 @optional
 -(void)onFilePageChanged:(QNActiveWidgetInfo *)info;
+
+/**
+ 文档被滚动到顶部或者底部时触发
+ @param 文档滚动信息
+ */
+@optional
+-(void)onWidgetScrolled:(QNWhiteBoardWidgetScrollInfo *)info;
+
 
  /**
   * 当widget被执行了某些关键动作时触发，比如新增和删除文件等
