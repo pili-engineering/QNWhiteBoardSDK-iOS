@@ -78,8 +78,10 @@
 -(void)joinRoom
 {
     [[QNWhiteboardControl instance] addListener:self];
-    [[QNWhiteboardControl instance] joinRoom:self.roomToken widthHeightThan:0.5];
-    [[QNWhiteboardControl instance] setBackgroundColor:@"#55FF0000"];
+    QNWhiteboardJoinRoomConfig *config = [[QNWhiteboardJoinRoomConfig alloc]init];
+    config.aspectRatio = 0.5;
+    config.title = @"3bdhajfjsa";
+    [[QNWhiteboardControl instance] joinRoom:self.roomToken config:config];
     
 }
 

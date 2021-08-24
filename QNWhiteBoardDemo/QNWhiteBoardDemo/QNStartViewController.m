@@ -10,13 +10,20 @@
 
 @interface QNStartViewController ()
 
+@property (nonatomic,strong) UITextField *textfiled;
 @end
 
 @implementation QNStartViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    
+    self.textfiled = [[UITextField alloc]initWithFrame:CGRectMake(30, 270, self.view.frame.size.width - 60, 25)];
+    self.textfiled.placeholder = @"请输入roomToken";
+    self.textfiled.layer.borderWidth = 1;
+    [self.view addSubview:self.textfiled];
 
     UIButton *startButton = [[UIButton alloc]initWithFrame:CGRectMake(100, 300, 200, 50)];
     [startButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -30,7 +37,10 @@
 - (void)startButtonClick {
     
     QNWhiteBoardDemoController * demoEntry = [[QNWhiteBoardDemoController alloc]init];
-    demoEntry.roomToken = @"QxZugR8TAhI38AiJ_cptTl3RbzLyca3t-AAiH-Hh:pM05ijM2sOGJKvkDxP1c1QXzOH0=:eyJhcHBJZCI6ImQ4ZHJlOHcxcCIsInJvb21OYW1lIjoiMTIzNDU0IiwidXNlcklkIjoiMTIzNDUiLCJleHBpcmVBdCI6MTYyNjUxODUyNzg3NDczMTQ5MCwicGVybWlzc2lvbiI6ImFkbWluIn0=";
+    NSString *token = self.textfiled.text.length > 0
+    ? self.textfiled.text
+    : @"QxZugR8TAhI38AiJ_cptTl3RbzLyca3t-AAiH-Hh:srRQTXJzBogXrXVMq-FUSOdER3c=:eyJhcHBJZCI6ImQ4ZHJlOHcxcCIsImV4cGlyZUF0IjoxNjYxNTcxNzAzLCJwZXJtaXNzaW9uIjoidXNlciIsInJvb21OYW1lIjoiMTIzIiwidXNlcklkIjoiMTIzMzMifQ==";
+    demoEntry.roomToken = token;
     demoEntry.modalPresentationStyle = UIModalPresentationOverCurrentContext;
     [self presentViewController:demoEntry animated:YES completion:^{}];
         

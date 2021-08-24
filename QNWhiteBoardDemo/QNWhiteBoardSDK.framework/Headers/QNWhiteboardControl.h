@@ -39,6 +39,17 @@ typedef NS_ENUM(NSInteger,QNWhiteBoardErrorNo)
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface QNWhiteboardJoinRoomConfig : NSObject
+
+//宽高比
+@property (nonatomic, assign) CGFloat aspectRatio;
+//扩展比
+@property (nonatomic, assign) CGFloat zoomScale;
+//白板标题,长度 1 ~ 20 支持数字、字母、下划线，相同的RTC房间，如果title相同，则进相同的房间，一个RTC房间可以有多个白板房间，标题不同就会生成新的， 该字段非必填
+@property (nonatomic, copy) NSString *title;
+
+@end
+
 @class QNWhiteBoardViewController;
 @interface QNWhiteboardControl : NSObject
 
@@ -110,7 +121,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param token rtcToken
  *  widthHeightThan 宽高比
  */
-- (void)joinRoom:(NSString *)token widthHeightThan:(CGFloat)widthHeightThan;
+- (void)joinRoom:(NSString *)token config:(QNWhiteboardJoinRoomConfig *)config;
 /**
  * 离开白板房间
  *
