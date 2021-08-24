@@ -31,15 +31,16 @@ ios版本的白板控件的类前缀都是QNWhiteBoard,framework的名字是QNWh
 
 ## 加入房间
 
-首先访问自己的服务器获取要加入的白板房间的roomId,token,appId等参数（房间的创建和token的生成由服务器对接SDK服务端接口）。此接口需要在白板初始化完成之后来进行
+首先访问自己的服务器获取要加入的RTC房间的roomToken,QNWhiteboardJoinRoomConfig等参数（房间的创建和token的生成由服务器对接SDK服务端接口）。此接口需要在白板初始化完成之后来进行
 
-首先构建进房参数[QNWhiteBoardJoinInfo](#QNWhiteBoardJoinInfo)和[QNWhiteBoardRoomMember](#QNWhiteBoardRoomMember)然后执行[QNWhiteboardControl](#joinroom)来加入房间。
+首先构建进房参数来加入房间。
 
 ```joinRoom
 
-    QNWhiteBoardJoinInfo * joinInfo = [[QNWhiteBoardJoinInfo alloc] initWithParam:appId room:roomId user:userId  token:token];
-    QNWhiteBoardRoomMember * member = [[QNWhiteBoardRoomMember alloc] initWithParams:userId session:nil role:6 name:nil avatar:nil];
-    [[QNWhiteboardControl instance] joinRoom:joinInfo member:member];
+    QNWhiteboardJoinRoomConfig *config = [[QNWhiteboardJoinRoomConfig alloc]init];
+    config.aspectRatio = 0.5;
+    config.title = @"3bdhajfjsa";
+    [[QNWhiteboardControl instance] joinRoom:self.roomToken config:config];
 
 ```
 
