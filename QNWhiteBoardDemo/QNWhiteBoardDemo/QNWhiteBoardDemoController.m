@@ -63,6 +63,7 @@
     
     [self joinRoom];
     
+    self.view.backgroundColor = [UIColor blueColor];
 }
 
 - (void)addView:(UIView *)view_ {
